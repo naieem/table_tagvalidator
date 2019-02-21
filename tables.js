@@ -11,6 +11,7 @@ var tagValidator = require('./core/tagvalidator.table');
 // business tables
 var file = require('./business/file.table');
 var doctor = require('./business/doctor.table');
+var room = require('./business/room.table');
 module.exports = {
     user: usertable,
     person: personTable,
@@ -23,4 +24,5 @@ module.exports = {
     tagvalidator:tagValidator,// business table starts from here
     file: file,
     doctor: doctor,
+    room:room
 }
