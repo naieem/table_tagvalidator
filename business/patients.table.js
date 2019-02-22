@@ -12,6 +12,7 @@ var patientsSchema = new Schema({
     email: { type: String },
     room: { type: String, ref: 'room' },
     tag: String,
+    admissionDate: { type: Date, default: Date.now },
     rolesAllowedToRead: [String],
     rolesAllowedToWrite: [String],
     rolesAllowedToUpdate: [String],
