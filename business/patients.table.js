@@ -11,6 +11,7 @@ var patientsSchema = new Schema({
     availableTimes: [String],
     email: { type: String },
     room: { type: String, ref: 'room' },
+    doctors: [{ type: String, ref: 'doctor' }],
     tag: String,
     admissionDate: { type: Date, default: Date.now },
     rolesAllowedToRead: [String],
