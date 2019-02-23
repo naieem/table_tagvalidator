@@ -6,7 +6,7 @@ var roomSchema = new Schema({
     roomType: String,
     roomPrice: String,
     roomNumber: String,
-    isAvailable: Boolean,
+    isAvailable: { type: Boolean, default: true },
     patient: { type: String, ref: 'patient' },
     tag: String,
     rolesAllowedToRead: [String],
