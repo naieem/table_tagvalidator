@@ -8,7 +8,6 @@ var patientsSchema = new Schema({
     address: String,
     email: String,
     phone: String,
-    availableTimes: [String],
     email: { type: String },
     room: { type: String, ref: 'room' },
     doctors: [{ type: String, ref: 'doctor' }],
