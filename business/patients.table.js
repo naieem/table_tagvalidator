@@ -18,6 +18,8 @@ var patientsSchema = new Schema({
     rolesAllowedToUpdate: [String],
     idsAllowedToRead: [String],
     idsAllowedToWrite: [String],
-    idsAllowedToUpdate: [String]
+    idsAllowedToUpdate: [String],
+    created_at: { type: Date },
+    updated_at: { type: Date, default: Date.now }
 }, { _id: false });
 module.exports = mongoose.model('patient', patientsSchema);
