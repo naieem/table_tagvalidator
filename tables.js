@@ -13,6 +13,7 @@ var file = require('./business/file.table');
 var doctor = require('./business/doctor.table');
 var room = require('./business/room.table');
 var patients = require('./business/patients.table');
+var medicine = require('./business/medicine.table');
 module.exports = {
     user: usertable,
     person: personTable,
@@ -22,9 +23,10 @@ module.exports = {
     relationship: relationship,
     relationmapper: relationmapper,
     infocenter: infocenter,
-    tagvalidator:tagValidator,// business table starts from here
+    tagvalidator: tagValidator, // business table starts from here
     file: file,
     doctor: doctor,
-    room:room,
-    patient:patients
+    room: room,
+    patient: patients,
+    medicine: medicine
 }
