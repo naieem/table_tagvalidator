@@ -12,6 +12,7 @@ var medicineSchema = new Schema({
     quantity: {
         type: Number
     },
+    price:Number,
     created_at: { type: Date },
     updated_at: { type: Date, default: Date.now },
     rolesAllowedToRead: [String],
