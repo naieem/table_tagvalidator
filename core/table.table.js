@@ -36,4 +36,5 @@ var table = new Schema({
     defaultRolesToRead: [String],
     defaultRolesToUpdate: [String],
 }, { _id: false });
-module.exports = mongoose.model('table', table);
+// module.exports = mongoose.model('table', table);
+module.exports=table;

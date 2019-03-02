@@ -6,4 +6,5 @@ var tagvalidatorSchema = new Schema({
     tag: String,
     shouldValidate:Boolean
 });
-module.exports = mongoose.model('tagvalidator', tagvalidatorSchema);
+// module.exports = mongoose.model('tagvalidator', tagvalidatorSchema);
+module.exports=tagvalidatorSchema;

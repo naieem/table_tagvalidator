@@ -17,10 +17,6 @@ module.exports = {
 function init(data) {
     return new Promise((resolve, reject) => {
         var validationResult = validationService.validate(data, validators);
-        if (!validationResult) {
-            resolve(false);
-        } else {
-            resolve(true);
-        }
+        resolve(validationResult);
     });
 }

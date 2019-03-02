@@ -14,4 +14,5 @@ var fileSchema = new Schema({
     idsAllowedToWrite: [String],
     idsAllowedToUpdate: [String]
 }, { _id: false });
-module.exports = mongoose.model('file', fileSchema);
+// module.exports = mongoose.model('file', fileSchema);
+module.exports=fileSchema;

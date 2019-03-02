@@ -14,19 +14,59 @@ var doctor = require('./business/doctor.table');
 var room = require('./business/room.table');
 var patients = require('./business/patients.table');
 var medicine = require('./business/medicine.table');
-module.exports = {
-    user: usertable,
-    person: personTable,
-    role: roleTable,
-    userreadabledata: userreadabledata,
-    table: tableTable,
-    relationship: relationship,
-    relationmapper: relationmapper,
-    infocenter: infocenter,
-    tagvalidator: tagValidator, // business table starts from here
-    file: file,
-    doctor: doctor,
-    room: room,
-    patient: patients,
-    medicine: medicine
+module.exports = [{
+    name: 'user',
+    schema: usertable
+},
+{
+    name: 'person',
+    schema: personTable
+},
+{
+    name: 'role',
+    schema: roleTable
+},
+{
+    name: 'userreadabledata',
+    schema: userreadabledata
+},
+{
+    name: 'table',
+    schema: tableTable
+},
+{
+    name: 'relationship',
+    schema: relationship
+},
+{
+    name: 'relationmapper',
+    schema: relationmapper
+},
+{
+    name: 'infocenter',
+    schema: infocenter
+},
+{
+    name: 'file',
+    schema: file
+},
+{
+    name: 'doctor',
+    schema: doctor
+},
+{
+    name: 'room',
+    schema: room
+},
+{
+    name: 'patient',
+    schema: patients
+},
+{
+    name: 'medicine',
+    schema: medicine
+},{
+    name:'tagvalidator',
+    schema:tagValidator
 }
+];
