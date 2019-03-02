@@ -22,4 +22,5 @@ var medicineSchema = new Schema({
     idsAllowedToWrite: [String],
     idsAllowedToUpdate: [String]
 }, { _id: false });
-module.exports = mongoose.model('medicine', medicineSchema);
+// module.exports = mongoose.model('medicine', medicineSchema);
+module.exports=medicineSchema;

@@ -9,4 +9,5 @@ var userSchema = new Schema({
     created_at: { type: Date },
     updated_at: { type: Date, default: Date.now },
 }, { _id: false });
-module.exports = mongoose.model('User', userSchema);
+// module.exports = mongoose.model('User', userSchema);
+module.exports=userSchema;

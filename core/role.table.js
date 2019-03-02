@@ -13,4 +13,5 @@ var roleSchema = new Schema({
     idsAllowedToWrite: [String],
     idsAllowedToUpdate: [String]
 }, { _id: false });
-module.exports = mongoose.model('role', roleSchema);
+// module.exports = mongoose.model('role', roleSchema);
+module.exports=roleSchema;

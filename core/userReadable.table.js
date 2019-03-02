@@ -6,4 +6,5 @@ var userReadableSchema = new Schema({
     tableName: { type: String },
     readableFields: [String]
 }, { _id: false });
-module.exports = mongoose.model('userreadabledata', userReadableSchema);
+// module.exports = mongoose.model('userreadabledata', userReadableSchema);
+module.exports=userReadableSchema;

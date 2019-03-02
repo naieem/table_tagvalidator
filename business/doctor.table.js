@@ -27,4 +27,5 @@ var doctorSchema = new Schema({
     created_at: { type: Date },
     updated_at: { type: Date, default: Date.now }
 }, { _id: false });
-module.exports = mongoose.model('doctor', doctorSchema);
+// module.exports = mongoose.model('doctor', doctorSchema);
+module.exports=doctorSchema;

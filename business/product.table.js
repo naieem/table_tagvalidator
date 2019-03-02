@@ -27,4 +27,5 @@ var personSchema = new Schema({
     created_at: { type: Date },
     updated_at: { type: Date, default: Date.now }
 }, { _id: false });
-module.exports = mongoose.model('product', personSchema);
+// module.exports = mongoose.model('product', personSchema);
+module.exports=personSchema;

@@ -16,4 +16,5 @@ var relationshipMapperSchema = new Schema({
     idsAllowedToWrite: [String],
     idsAllowedToUpdate: [String]
 }, { _id: false });
-module.exports = mongoose.model('relationship', relationshipMapperSchema);
+// module.exports = mongoose.model('relationship', relationshipMapperSchema);
+module.exports=relationshipMapperSchema

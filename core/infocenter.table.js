@@ -17,4 +17,5 @@ var infoCenterSchema = new Schema({
     created_at: { type: Date },
     updated_at: { type: Date, default: Date.now }
 }, { _id: false });
-module.exports = mongoose.model('infocenter', infoCenterSchema);
+// module.exports = mongoose.model('infocenter', infoCenterSchema);
+module.exports = infoCenterSchema;
