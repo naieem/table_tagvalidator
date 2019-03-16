@@ -6,6 +6,7 @@ var testSchema = new Schema(
     _id: String,
     patientType:String,
     patientId: { type: String, ref: "patient" },
+    doctorId: { type: String, ref: "doctor" },
     patientName: String,
     patientPhone: String,
     patientAddress: String,
