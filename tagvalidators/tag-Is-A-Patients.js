@@ -28,6 +28,7 @@ function init(data) {
                         }
                         checkRoomAvailability(data).then((response) => {
                             if (response) {
+                                console.log("room found.Now updating room info");
                                 updateRoomData(patients[0].room, updateRommInfo).then((result) => {
                                     resolve(result);
                                 });
@@ -36,6 +37,10 @@ function init(data) {
                                 resolve(response);
                             }
                         });
+                    }
+                    else{
+                        console.log('No room data found to patients data');
+                        resolve(true);
                     }
                 }else{
                     resolve(true);
