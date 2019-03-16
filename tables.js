@@ -8,6 +8,7 @@ var relationship = require("./core/relationship.table");
 var relationmapper = require("./core/relationMapper.table");
 var infocenter = require("./core/infocenter.table");
 var tagValidator = require("./core/tagvalidator.table");
+var changeObserver =require("./core/changeObserver");
 // business tables
 var file = require("./business/file.table");
 var doctor = require("./business/doctor.table");
@@ -27,6 +28,10 @@ module.exports = [
   {
     name: "role",
     schema: roleTable
+  },
+  {
+    name: "changeobserver",
+    schema: changeObserver
   },
   {
     name: "userreadabledata",

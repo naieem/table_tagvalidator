@@ -62,12 +62,17 @@ function checkRoomAvailability(data) {
         }, (err, result) => {
             console.log('room result found');
             console.log('number of room found is ' + result.length);
-            if (!err && result && result.length && result.length < 2) {
-                console.log('room availability ' + result[0].isAvailable);
-                if (result[0].isAvailable)
+            if (!err) {
+                if(result && result.length && result.length < 2){
+                    console.log('room availability ' + result[0].isAvailable);
+                    if (result[0].isAvailable)
+                        resolve(true);
+                }else {
+                    console.log('room not available');
                     resolve(true);
-            } else {
-                console.log('Error occoured saying ' + err);
+                }
+            }else {
+                console.log('Error happens '+err);
                 resolve(false);
             }
         });
