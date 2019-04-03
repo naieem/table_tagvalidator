@@ -10,6 +10,7 @@ var infocenter = require("./core/infocenter.table");
 var tagValidator = require("./core/tagvalidator.table");
 var changeObserver = require("./core/changeObserver");
 var rolemap = require("./core/rolemap.table");
+var feature = require("./core/feature.table");
 // business tables
 var file = require("./business/file.table");
 var doctor = require("./business/doctor.table");
@@ -84,5 +85,9 @@ module.exports = [{
     {
         name: "rolemap",
         schema: rolemap
+    },
+    {
+        name: "feature",
+        schema: feature
     }
 ];
