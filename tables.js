@@ -18,6 +18,7 @@ var room = require("./business/room.table");
 var patients = require("./business/patients.table");
 var medicine = require("./business/medicine.table");
 var test = require("./business/test.table");
+var task = require("./business/task.table");
 module.exports = [{
         name: "user",
         schema: usertable
@@ -89,5 +90,9 @@ module.exports = [{
     {
         name: "feature",
         schema: feature
+    },
+    {
+        name: "task",
+        schema: task
     }
 ];
