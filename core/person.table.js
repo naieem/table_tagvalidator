@@ -13,6 +13,7 @@ var personSchema = new Schema({
     created_at: { type: Date },
     updated_at: { type: Date, default: Date.now },
     roles: [String],
+    tag: String,
     rolesAllowedToRead: [String],
     rolesAllowedToWrite: [String],
     rolesAllowedToUpdate: [String],
