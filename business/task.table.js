@@ -8,6 +8,9 @@ var taskSchema = new Schema({
     description: String,
     files: [{ type: String, ref: 'file' }],
     status: String,
+    affectedCustomer: String,
+    isRepeated: { type: Boolean, default: false },
+    repeatRelatedTicketId: String,
     posted_at: { type: Date },
     resolved_at: { type: Date },
     created_at: { type: Date },
@@ -17,7 +20,7 @@ var taskSchema = new Schema({
     rolesAllowedToUpdate: [String],
     idsAllowedToRead: [String],
     idsAllowedToWrite: [String],
-    idsAllowedToUpdate: [String]
+    idsAllowedToUpdate: [String],
 }, { _id: false });
 // module.exports = mongoose.model('task', taskSchema);
 module.exports = taskSchema;
