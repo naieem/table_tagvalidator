@@ -13,6 +13,7 @@ var taskSchema = new Schema({
     repeatRelatedTicketId: String,
     taskType: String,
     severityLevel: String,
+    category:String,
     postedBy: String,
     referenceTicketId: String,
     resolution: String,

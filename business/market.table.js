@@ -6,6 +6,7 @@ var marketSchema = new Schema({
     marketName: String,
     marketDescription: String,
     marketCountry: String,
+    marketCode:String,
     tag: String,
     rolesAllowedToRead: [String],
     rolesAllowedToWrite: [String],
