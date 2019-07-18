@@ -48,6 +48,7 @@ var personSchema = new Schema({
     kilometersRn:{
         type: Number
     },
+    tag: [String],
     rolesAllowedToRead: [String],
     rolesAllowedToWrite: [String],
     rolesAllowedToUpdate: [String],

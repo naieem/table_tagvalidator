@@ -20,6 +20,7 @@ var medicine = require("./business/medicine.table");
 var test = require("./business/test.table");
 var task = require("./business/task.table");
 var market = require("./business/market.table");
+var product = require("./business/product.table");
 module.exports = [{
         name: "user",
         schema: usertable
@@ -99,5 +100,9 @@ module.exports = [{
     {
         name: "market",
         schema: market
+    },
+    {
+        name: "product",
+        schema: product
     }
 ];
