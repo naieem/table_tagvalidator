@@ -18,6 +18,36 @@ var personSchema = new Schema({
     quantity: {
         type: Number
     },
+    details:{
+        type: String
+    },
+    model:{
+        type: String
+    },
+    modelYr:{
+        type: String
+    },
+    registration:{
+        type: String
+    },
+    condition:{
+        type: String
+    },
+    transmission:{
+        type: String
+    },
+    bodyType:{
+        type: String
+    },
+    fuelType:{
+        type: String
+    },
+    engineCapacity:{
+        type: String
+    },
+    kilometersRn:{
+        type: Number
+    },
     rolesAllowedToRead: [String],
     rolesAllowedToWrite: [String],
     rolesAllowedToUpdate: [String],
