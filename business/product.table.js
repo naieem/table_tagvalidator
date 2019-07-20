@@ -42,6 +42,9 @@ var personSchema = new Schema({
     fuelType:{
         type: String
     },
+    addressarea:{
+        type: String
+    },
     engineCapacity:{
         type: String
     },
