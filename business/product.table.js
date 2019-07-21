@@ -49,6 +49,7 @@ var personSchema = new Schema({
         type: Number
     },
     tag: [String],
+    files: [{ type: String, ref: 'file' }],
     rolesAllowedToRead: [String],
     rolesAllowedToWrite: [String],
     rolesAllowedToUpdate: [String],
