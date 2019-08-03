@@ -30,6 +30,9 @@ var personSchema = new Schema({
     registration:{
         type: String
     },
+    contactNumber:{
+        type: String
+    },
     condition:{
         type: String
     },
@@ -53,6 +56,7 @@ var personSchema = new Schema({
     },
     tag: [String],
     files: [{ type: String, ref: 'file' }],
+    owner: { type: String, ref: 'person' },
     rolesAllowedToRead: [String],
     rolesAllowedToWrite: [String],
     rolesAllowedToUpdate: [String],
