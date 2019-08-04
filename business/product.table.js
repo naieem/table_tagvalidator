@@ -54,6 +54,10 @@ var personSchema = new Schema({
     kilometersRn:{
         type: Number
     },
+    isApproved:{
+        type: Boolean,
+        default:false
+    },
     tag: [String],
     files: [{ type: String, ref: 'file' }],
     owner: { type: String, ref: 'person' },
