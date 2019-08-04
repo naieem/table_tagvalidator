@@ -19,6 +19,8 @@ var taskSchema = new Schema({
     resolution: String,
     additionalInfo: { type: String, default: '' },
     market: { type: String, ref: 'market' },
+    month:Number,
+    year:Number,
     posted_at: { type: Date },
     resolved_at: { type: Date },
     created_at: { type: Date },
