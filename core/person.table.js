@@ -9,7 +9,7 @@ var personSchema = new Schema({
     designation: { type: String, default: '' },
     gender: { type: String, default: '' },
     company: { type: String, default: '' },
-    user_id: { type: String, default: '' },
+    user_id: { type: String,ref: 'user', default: '' },
     created_at: { type: Date },
     updated_at: { type: Date, default: Date.now },
     roles: [String],
